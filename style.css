@@ -299,6 +299,19 @@ margin: 5px 0;
         justify-content: center;
         text-align: center;
     }
+
+  #itens {
+        position: absolute;
+        top: 12rem;          /* abaixo do topo */
+        left: 0;
+        width: 100%;        /* ocupa toda a largura */
+        margin-left: 0;
+        background-color: #8b0000;
+        text-align: center;
+        z-index: 998;       /* abaixo do ícone */
+        padding: 1rem 0;
+    }
+
     .logo {
         width: 5rem;
         height: 7rem;
@@ -313,6 +326,8 @@ margin: 5px 0;
         height: 3rem;
         margin: 0 auto;
         display: block;
+        position: relative;
+        z-index: 999;
     }
     .igreja, .igreja2, .igreja3 {
         margin-left: auto;
@@ -332,11 +347,71 @@ margin: 5px 0;
         text-align: center;
         margin-left: 0;
     }
+    .titulo, .agenda, .subt, .subtC, .subtsobre, .subtEnd, .subtcomunidades, .subtAv {
+        margin-top: 2.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
     .agenda, .subt, .subtC, .dias, .diasC, .horario, .subtsobre, .txtsobre, .subtEnd, .subtcomunidades, .subtAv {
         font-size: 2rem;
         margin-left: 0;
         margin-right: 0;
         text-align: center;
+        width: 100%;
+        display: block;
+        margin-top: 1.2rem;
+    }
+    .dias, .diasC, .horario {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .txtsobre {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+        display: block;
+    }
+    .subtsobre {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    .img-centro, .sobre-img, .igreja-img, .igreja3 {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        max-width: 90vw;
+        height: auto;
+    }
+    .enddiv {
+        align-items: center;
+    }
+    .end {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
+    }
+    .local {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    iframe, .mapa {
+        display: flex;
+        margin-left: 10rem;
+        
+        max-width: 98vw;
+        width: 100%;
     }
     .Comunidades ul {
         gap: 2rem;
@@ -344,10 +419,12 @@ margin: 5px 0;
         align-items: center;
         text-align: center;
         width: 100%;
+        flex-wrap: wrap;
     }
     .Comunidades ul li {
         margin-left: 0;
         text-align: center;
+        font-size: 1.2rem;
     }
     .enddiv {
         flex-direction: column;
@@ -370,6 +447,23 @@ margin: 5px 0;
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+    /* Comunidades - nome e endereço juntos */
+    .comunidades-lista {
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+    }
+    .comunidades-lista li {
+        min-width: 140px;
+        max-width: 45vw;
+        font-size: 1.05rem;
+    }
+    .comunidade-nome {
+        font-size: 1.1rem;
+    }
+    .comunidade-end {
+        font-size: 0.98rem;
     }
 }
 
@@ -401,18 +495,34 @@ margin: 5px 0;
         height: 2.2rem;
         margin: 0 auto;
         display: block;
+        position: relative;
+        z-index: 999;
     }
     #menu ul li {
         font-size: 1.1rem;
         padding: 8px;
         text-align: center;
     }
+    /* Tablets */
+
+   
+
+
     #itens {
-        top: 5rem;
-        margin-left: 0;
+        position: absolute;
+        top: 7rem;          /* abaixo do topo menor */
+        left: 0;
         width: 100%;
+        margin-left: 0;
+        background-color: #8b0000;
         text-align: center;
+        z-index: 998;
+        padding: 1rem 0;
     }
+
+
+
+
     .igreja, .igreja2, .igreja3 {
         margin-left: auto;
         margin-right: auto;
@@ -425,6 +535,10 @@ margin: 5px 0;
     .igreja2 {
         width: 60%;
         margin-top: 2%;
+    }
+    .titulo, .agenda, .subt, .subtC, .subtsobre, .subtEnd, .subtcomunidades, .subtAv {
+        margin-top: 2.2rem !important;
+        margin-bottom: 1.2rem !important;
     }
     .titulo {
         font-size: 1.5rem;
@@ -491,4 +605,13 @@ margin: 5px 0;
         align-items: center;
         text-align: center;
     }
+}
+footer {
+    background-color: #8b0000;
+    color: #f7e9c4;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    margin-top: 15rem;
 }
