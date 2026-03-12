@@ -572,7 +572,7 @@ margin: 5px 0;
     .comunidade-end1 {
         font-size: 0.98rem;
         margin-left: 4.5rem;
-        color: #000;
+        color: #000000;
         font-weight: lighter;
 
     }
@@ -631,7 +631,7 @@ margin: 5px 0;
         font-size: 0.98rem;
         text-align: center !important;
         margin-left: -1.2rem !important;
-        color: #000;
+        color: #000000 !important;
         font-weight: lighter;
 
     }
@@ -824,7 +824,7 @@ footer {
     width: 20rem;
     height: 20rem;
     gap: 2rem;
-    margin-top: -8.3rem;
+    margin-top: -10.5rem;
     justify-content: center;
     align-items: center;
 }
@@ -843,4 +843,12 @@ footer {
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
+    
 }
+.comunidade-end1 {
+        font-size: 0.98rem;
+        text-align: center !important;
+        color: #000000 !important;
+        font-weight: lighter;
+
+    }
