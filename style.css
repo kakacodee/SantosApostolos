@@ -52,11 +52,21 @@ body::before {
     margin-bottom: 0.5rem;
 }
 .comunidade-end {
-    color: #7a7a7a;
+    color: #000000;
     font-size: 1rem;
+    font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     margin-bottom: 0.5rem;
+}
+.comunidade-hor {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 @media (max-width: 1024px) {
@@ -118,6 +128,13 @@ main{
     height: 9rem;
     margin-left: 2vh;
     margin-top: 1vw;
+}
+.logo:hover{
+    width: 8rem;
+    height: 11rem;
+    margin-left: 1vh;
+    margin-top: 0.5vw;
+    transition: all 0.3s ease-in-out;
 }
 .menu {
     cursor: pointer;
@@ -184,14 +201,14 @@ margin: 5px 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 .subt{
-    color:#7a7a7a;
+    color:#000000;
     margin-left: 22%;
     margin-top: 4%;
     font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
 }
 .subtC{
-    color:#7a7a7a;
+    color:#000000;
     margin-left: 52%;
     margin-top: -25.55%;
     font-size: 3rem;
@@ -223,8 +240,17 @@ margin: 5px 0;
     font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
 }
+.it{
+    text-decoration: none;
+}
+
+.item:hover{
+    color: #5c5c5c;
+    font-size: larger;
+    transition: all 0.3s ease-in-out;
+}
 .subtsobre{
-    color:#7a7a7a;
+    color:#000000;
     margin-left: 36%;
     margin-top: 24%;
     font-size: 3rem;
@@ -246,7 +272,7 @@ margin: 5px 0;
     margin-right: 65%;
 }
 .subtEnd{
-    color:#7a7a7a;
+    color:#000000;
     text-align: center;
     margin-top: 8%;
     font-size: 3rem;
@@ -259,7 +285,7 @@ margin: 5px 0;
     margin-top: 2%;
 }
 .subtcomunidades {
-    color: #7a7a7a;
+    color: #000000;
     text-align: center;
     margin-top: 10rem;
     font-size: 2.5rem;
@@ -305,7 +331,7 @@ margin: 5px 0;
 }
 .end{
 
-    color:#7a7a7a;
+    color:#000000;
     margin-top: 1%;
     width: 100%;
     min-height: 3rem;
@@ -315,7 +341,7 @@ margin: 5px 0;
     text-align: center;
 }
 .subtAv{
-    color:#7a7a7a;
+    color:#000000;
     margin-left: 2.5%;
     margin-top: 4%;
     font-size: 3rem;
@@ -324,6 +350,16 @@ margin: 5px 0;
 
 /* Responsividade para tablets */
 @media (max-width: 1024px) {
+    .img-igrejas1{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    gap: 2rem;
+    margin-left: 6rem;
+    margin-top: -8.8rem !important;
+    justify-content: center;
+    align-items: center;
+}
     .download{
     display: inline-block;
     margin-top: 1rem;
@@ -356,13 +392,14 @@ margin: 5px 0;
         align-items: center;
         justify-content: center;
         text-align: center;
+        width: 110%;
     }
 
   #itens {
         position: absolute;
         top: 12rem;          /* abaixo do topo */
         left: 0;
-        width: 100%;        /* ocupa toda a largura */
+        width: 110%;        /* ocupa toda a largura */
         margin-left: 0;
         background-color: #8b0000;
         text-align: center;
@@ -519,14 +556,92 @@ margin: 5px 0;
     }
     .comunidade-nome {
         font-size: 1.1rem;
+        color: #000000;
+        text-align: center !important;
+    }
+    .comunidade-nome1 {
+        font-size: 1.1rem;
+        color: #000000;
+        text-align: center !important;
+        margin-left: 3.5rem !important;
     }
     .comunidade-end {
         font-size: 0.98rem;
+        text-align: center;
+    }
+    .comunidade-end1 {
+        font-size: 0.98rem;
+        margin-left: 4.5rem;
+        color: #000;
+        font-weight: lighter;
+
+    }
+    .comunidade-hor1{
+        color: #000000;
+        font-size: 0.98rem;
+        margin-left: 10rem !important;
+        margin-top: 1rem;
+        color: #000;
+        font-weight: lighter;
+    }
+     .comunidade-hor {
+        color: #000000;
+        font-size: 0.98rem;
+        text-align: center;
+        margin-top: 1rem;
+        color: #000;
+        font-weight: lighter;
     }
 }
 
 /* Responsividade para celulares */
 @media (max-width: 600px) {
+    .comunidade-nome {
+        font-size: 1.1rem;
+        color: #000000;
+        text-align: center !important;
+    }
+    .comunidade-end {
+        font-size: 0.98rem;
+        text-align: center;
+    }
+     .comunidade-hor {
+        color: #000000;
+        font-size: 0.98rem;
+        text-align: center;
+        margin-top: 1rem;
+        color: #000;
+        font-weight: lighter;
+    }
+    .img-igrejas{
+    display: inline;
+    margin-top: 1rem !important;
+    }
+    .img-igrejas1{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    gap: 2rem;
+    margin-left: 0.2rem;
+    margin-top: 0 !important;
+    justify-content: center;
+    align-items: center;
+}
+.comunidade-end1 {
+        font-size: 0.98rem;
+        text-align: center !important;
+        margin-left: -1.2rem !important;
+        color: #000;
+        font-weight: lighter;
+
+    }
+        .comunidade-nome1 {
+        font-size: 1.1rem;
+        color: #000000;
+        text-align: center !important;
+        margin-left: 2.5rem !important;
+    }
+
 .download{
     display: inline-block;
     margin-top: 1rem;
@@ -540,10 +655,11 @@ margin: 5px 0;
     margin-left: 2%;
 }
     footer {
-        width: 100%;
+        width: 110%;
+        margin-left: 0rem !important;
         position: relative !important;
     bottom: auto !important;
-    margin-top: 140vh !important;
+    margin-top: 220vh !important;
     
     }
     body {
@@ -695,13 +811,32 @@ footer {
     margin-top: 18rem;
 }
 .img-igrejas{
-    display: flex;
-    width: 100%;
+    display: inline;
+    width: 20rem;
+    height: 20rem;
     gap: 2rem;
+    margin-top: -2rem;
+    justify-content: center;
+    align-items: center;
+}
+.img-igrejas1{
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    gap: 2rem;
+    margin-top: -8.3rem;
     justify-content: center;
     align-items: center;
 }
 .img-igrejas:hover{
+    display: flex;
+    width: 120%;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-igrejas1:hover{
     display: flex;
     width: 120%;
     gap: 2rem;
