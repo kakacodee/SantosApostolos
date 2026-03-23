@@ -1,7 +1,65 @@
+/* --- Cards de horários --- */
+.cards-horarios {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vw;
+    margin: 4vh 0 6vh 0;
+    background: #f7f3ef;
+    padding: 2vh 0;
+    margin-top: 20vh;
+}
+
+.card-horario {
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 2.5vh 3vw 2.5vh 3vw;
+    min-width: 320px;
+    max-width: 350px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 1vw;
+}
+
+.card-title {
+    font-family: 'Georgia', serif;
+    font-size: 2.3vw;
+    color: #3a1a0a;
+    font-weight: bold;
+    margin-bottom: 0.5vh;
+    margin-top: 0;
+    text-align: center;
+}
+
+.card-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 1vh;
+    margin-top: 0.5vh;
+}
+
+.card-content {
+    text-align: center;
+    color: #2d1a0a;
+    font-size: 1.15vw;
+    font-family: 'Georgia', serif;
+    margin-top: 0.5vh;
+}
+
+.card-content p {
+    margin: 0.5vh 0;
+    font-weight: 500;
+}
 body{
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #f5f1ed;
 }
 .nav-bar {
     background-color: #640000;
@@ -77,18 +135,21 @@ margin-top: -10vh;
 }
 .sobre{
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
+    gap: 2vw;
     
     height: 100vh;
     gap: 4vw;
     margin: 0 auto;
 }
 .img-sobre{
-    display: flex;
     border-radius: 25px;
     width: 25%;
     height: 70%;
-margin-left: 4vw;
+    object-fit: cover;
+    margin-left: 0;
        
 }
 .ti-sobre{
@@ -98,8 +159,206 @@ font-size: 2.5vw;
 margin-top: -1vh;
 
 }
+.sobre-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 65%;
+}
 .txt-sobre{
     width: 100%;
-    font-size: 1.2vw;
-    margin-top: 8vh;
+    font-size: 1.6vw;
+    margin-top: 2vh;
+    align-self: flex-start;
 }
+.endereco{
+    margin-top: -15vh;
+}
+.end{
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+.avisos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    margin-top: 15vh;
+}
+.av{
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+.comunicados{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 20%;
+    margin: 2vh 0 2vh 12vw;
+    padding: 2vh;
+}
+.comunicados-header{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    align-self: start;
+}
+.img-comunicados{
+    width: 15%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 0;
+}
+.ti-comunicados{
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+    color: #640000;
+}
+.txt-comunicados{
+
+    color: #2d1a0a;
+    margin: 1vw 0;
+    font-size: 1.5vw;
+    color: #2d1a0a;
+    text-align: center;
+    width: 80%;
+}
+.num-comunicados{
+   font-size: 1.5vw;
+    color: #640000;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2vh;
+}
+.acao{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 40.5vw;
+    margin-top: -103.2vh;
+    width: 15%;
+   
+    padding: 4vh;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.img-acao{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.pascoa{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 66vw;
+    margin-top: -46vh;
+    width: 18%;
+   
+    padding: 4vh;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.img-pascoa{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.imagem-promocional{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 41vw;
+    margin-top: 1vh;
+
+    
+}
+.img-imagem{
+    border-radius: 20px;
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.pix{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 66vw;
+    margin-top: -47.4vh;
+    width: 18%;
+   
+    padding: 4vh;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.img-pix{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: #df895e;
+    border-radius: 25px;
+}
+.semanasanta{
+    display: flex;
+    justify-content: center;
+   margin-top: 6vh;
+   flex-direction: column;
+}
+.ti-santa{
+    font-weight: bold;
+    font-size: 2.5vw;
+    text-align: center;
+
+}
+.imgs{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin: 2vh auto 0 auto;
+}
+.comunidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2vh;
+}
+.ti-comunidades{
+    font-weight: bold;
+    font-size: 2.5vw;
+    text-align: center;
+}
+.comunidadesimgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2vw;
+    margin: 2vh auto 0 auto;
+    width: 100%;
+}
+.img-comunidades{
+    width: 15%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+    footer{
+        background-color: #640000;
+        color: white;
+        text-align: center;
+        padding: 1vh 0;
+        margin-top: 10vh;
+    }
+    footer img{
+        width: 2rem;
+        height: auto;
+        margin-left: 1vw;
+    }
