@@ -1,855 +1,105 @@
 body{
-     margin: 0;
-    min-height: 100vh;
-
-    background-image: url("img/Cena.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(247, 198, 170, 0.562); /* escurece levemente */
-    z-index: -2;
-}
-/* Comunidades - nome e endereço juntos */
-.comunidades-lista {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3rem;
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0 0 0;
-}
-.download{
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #8b0000;
-    color: #f7e9c4;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    border-radius: 4px;
-    margin-left: 47.7%;
-}
-.comunidades-lista li {
-    text-align: center;
-    min-width: 220px;
-    max-width: 300px;
-    margin: 0 1rem;
-}
-.comunidade-nome {
-    color: #8b0000;
-    font-size: 1.3rem;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-.comunidade-end {
-    color: #000000;
-    font-size: 1rem;
-    font-weight: lighter;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-.comunidade-hor {
-    color: #000000;
-    font-size: 1rem;
-    font-weight: lighter;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
-}
-
-@media (max-width: 1024px) {
-    .comunidades-lista {
-        gap: 1.2rem;
-        flex-wrap: wrap;
-        padding: 0 1rem;
-    }
-    .comunidades-lista li {
-        min-width: 140px;
-        max-width: 45vw;
-        font-size: 1.05rem;
-    }
-    .comunidade-nome {
-        font-size: 1.1rem;
-    }
-    .comunidade-end {
-        font-size: 0.98rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .comunidades-lista {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-    .comunidades-lista li {
-        min-width: 0;
-        max-width: 98vw;
-    }
-    .comunidade-nome {
-        font-size: 1.1rem;
-    }
-    .comunidade-end {
-        font-size: 0.95rem;
-    }
-}
-body{
     margin: 0;
     padding: 0;
-    background-color: #f7e9c4;
-    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+.nav-bar {
+    background-color: #640000;
+
+}
+
+.ul-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-height: 90px;
+}
+
+.ul-menu li {
+    list-style: none;
+    margin: 0 1vw;
+    display: flex;
+    align-items: center;
     height: 100%;
 }
-main{
-    flex:1;
+
+.ul-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: bold;
+    transition: color 0.2s;
 }
-#topo{
-    width: 100%;
-    min-height: 9rem;
-    background-color: #8b0000;
+
+.ul-menu li a:hover {
+    color: #ffd700;
+}
+
+.logo-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 0 1vw;
 }
-.logo{
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 8vw;
+    margin: 0 auto;
+}
+.menu-logo {
+    height: auto;
     width: 6rem;
-    height: 9rem;
-    margin-left: 2vh;
-    margin-top: 1vw;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2vh;
 }
-.logo:hover{
-    width: 8rem;
-    height: 11rem;
-    margin-left: 1vh;
-    margin-top: 0.5vw;
-    transition: all 0.3s ease-in-out;
-}
-.menu {
-    cursor: pointer;
+.par-img{
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex: 1;
+    border-radius: 25px;
+    width: 38%;
+    height: auto;
+    margin-top: -13vh;
+       
 }
-
-.menuimg{
-    width: 3.5rem;
-    height: 3.5rem;
-    margin-right: 2%;
+.par-title{
+font-weight: bold;
+width: 40%;
+font-size: 2.5vw;
+margin-left: 10vw;
+margin-top: -10vh;
 }
-
-#menu ul li {
-    list-style: none;
-    color: #fafafa;
-    padding: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-}
-#itens {
-    position: absolute;
-    width: 100%;
-    top: 9rem;   
-    margin-left: 90%;
-    background-color: #8b0000;
-}
-
-#menu ul li a{
-    text-decoration: none;
-}
-.linha {
-width: 30px;
-height: 3px;
-background-color: #333;
-margin: 5px 0;
-}
-.igreja{
-    width: 31.5%;
-    margin-top: 1%;
-    margin-left: 35%;
-}
-.igreja2{
-
-    width: 20%;
-    margin-top: -29%;
-    margin-right: 67%;
-}
-.titulo{
-    color: #584309;
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 3%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.agenda{
-    color:#8b0000;
-    margin-left:12rem;
-    margin-top: 5%;
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif; 
-
-}
-.subt{
-    color:#000000;
-    margin-left: 22%;
-    margin-top: 4%;
-    font-size: 3rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-.subtC{
-    color:#000000;
-    margin-left: 52%;
-    margin-top: -25.55%;
-    font-size: 3rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-.dias{
-    color:#8b0000;
-    margin-left: 22.2%;
-    margin-top: -0.5%;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.diasC{
-    width: 28rem;
-    color:#8b0000;
-    margin-left: 53%;
-    margin-top: -0.5%;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-.horario{
-    color:#8b0000;
-    margin-left: 22.2%;
-    margin-top: -0.5%;
-    font-size: 2rem;
-    font-weight: lighter;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.it{
-    text-decoration: none;
-}
-
-.item:hover{
-    color: #5c5c5c;
-    font-size: larger;
-    transition: all 0.3s ease-in-out;
-}
-.subtsobre{
-    color:#000000;
-    margin-left: 36%;
-    margin-top: 24%;
-    font-size: 3rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-.txtsobre{
-    color:#8b0000;
-    margin-left: 36%;
-    width: 60%;
-    margin-top: 2%;
-    font-size: 2rem;
-    font-weight: lighter;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.igreja3{
+.sobre{
     display: flex;
-    width: 26%;
-    margin-top: -33.5%;
-    margin-right: 65%;
-}
-.subtEnd{
-    color:#000000;
-    text-align: center;
-    margin-top: 8%;
-    font-size: 3rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-.local{
-    display: flex;
-    margin-left: 30%;
-    width: 40%;
-    margin-top: 2%;
-}
-.subtcomunidades {
-    color: #000000;
-    text-align: center;
-    margin-top: 10rem;
-    font-size: 2.5rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-.Comunidades{
-    width: 100%;
-    height: 20rem;
-
-}
-.Comunidades ul{
+    justify-content: center;
     
+    height: 100vh;
+    gap: 4vw;
+    margin: 0 auto;
+}
+.img-sobre{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-    gap: 3rem;
-    flex-wrap: wrap;
+    border-radius: 25px;
+    width: 25%;
+    height: 70%;
+margin-left: 4vw;
+       
 }
-.Comunidades ul li{
-    list-style: none;
-    color: #8b0000;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0.5rem 1rem;
-    text-align: center;
-}
-.Comunidades ul li a {
-    text-decoration: none;
-    color: inherit;
-}
-.enddiv{
-    display: flex;
-    width: 95%;
-    min-height: 10rem;
-    background-color: #f7e9c4;
-    gap: 2rem;
+.ti-sobre{
+font-weight: bold;
+width: 100%;
+font-size: 2.5vw;
+margin-top: -1vh;
 
-    justify-content: center;
-    align-items: flex-start;
 }
-.end{
-
-    color:#000000;
-    margin-top: 1%;
+.txt-sobre{
     width: 100%;
-    min-height: 3rem;
-    font-weight: lighter;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    text-align: center;
+    font-size: 1.2vw;
+    margin-top: 8vh;
 }
-.subtAv{
-    color:#000000;
-    margin-left: 2.5%;
-    margin-top: 4%;
-    font-size: 3rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-/* Responsividade para tablets */
-@media (max-width: 1024px) {
-    .img-igrejas1{
-    display: flex;
-    width: 20rem;
-    height: 20rem;
-    gap: 2rem;
-    margin-left: 6rem;
-    margin-top: -8.8rem !important;
-    justify-content: center;
-    align-items: center;
-}
-    .download{
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #8b0000;
-    color: #f7e9c4;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    border-radius: 4px;
-    margin-left: 43.5%;
-}
-    footer {
-    position: relative;
-    background-color: #8b0000;
-    color: #f7e9c4;
-    text-align: center;
-    padding: 1rem 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
-     width: 110%;
-        position: relative !important;
-    bottom: auto !important;
-    margin-top: 110vh !important;
-}
-    #topo {
-        flex-direction: column;
-        min-height: 7rem;
-        padding: 1rem 0;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 110%;
-    }
-
-  #itens {
-        position: absolute;
-        top: 12rem;          /* abaixo do topo */
-        left: 0;
-        width: 110%;        /* ocupa toda a largura */
-        margin-left: 0;
-        background-color: #8b0000;
-        text-align: center;
-        z-index: 998;       /* abaixo do ícone */
-        padding: 1rem 0;
-    }
-
-    .logo {
-        width: 5rem;
-        height: 7rem;
-        margin-left: 0;
-        margin-top: 1vw;
-        display: block;
-        margin-right: auto;
-        margin-bottom: 1rem;
-    }
-    .menuimg {
-        width: 3rem;
-        height: 3rem;
-        margin: 0 auto;
-        display: block;
-        position: relative;
-        z-index: 999;
-    }
-    .igreja, .igreja2, .igreja3 {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    .igreja {
-        width: 60%;
-        margin-top: 2%;
-    }
-    .igreja2 {
-        width: 35%;
-        margin-top: 2%;
-    }
-    .titulo {
-        font-size: 2.2rem;
-        text-align: center;
-        margin-left: 0;
-    }
-    .titulo, .agenda, .subt, .subtC, .subtsobre, .subtEnd, .subtcomunidades, .subtAv {
-        margin-top: 2.5rem !important;
-        margin-bottom: 1.5rem !important;
-    }
-    .agenda, .subt, .subtC, .dias, .diasC, .horario, .subtsobre, .txtsobre, .subtEnd, .subtcomunidades, .subtAv {
-        font-size: 2rem;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
-        width: 100%;
-        display: block;
-        margin-top: 1.2rem;
-    }
-    .dias, .diasC, .horario {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-    .txtsobre {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        text-align: center;
-        display: block;
-    }
-    .subtsobre {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        width: 100%;
-        display: block;
-    }
-    .img-centro, .sobre-img, .igreja-img, .igreja3 {
-        display: block !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        max-width: 90vw;
-        height: auto;
-    }
-    .enddiv {
-        align-items: center;
-    }
-    .end {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        width: 100%;
-    }
-    .local {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-    iframe, .mapa {
-        display: flex;
-        margin-left: 10rem;
-        
-        max-width: 98vw;
-        width: 100%;
-    }
-    .Comunidades ul {
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    .Comunidades ul li {
-        margin-left: 0;
-        text-align: center;
-        font-size: 1.2rem;
-    }
-    .enddiv {
-        flex-direction: column;
-        gap: 2rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: 96%;
-        height: auto;
-        align-items: center;
-    }
-    .end {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .local {
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    /* Comunidades - nome e endereço juntos */
-    .comunidades-lista {
-        gap: 1.2rem;
-        flex-wrap: wrap;
-        padding: 0 1rem;
-    }
-    .comunidades-lista li {
-        min-width: 140px;
-        max-width: 45vw;
-        font-size: 1.05rem;
-    }
-    .comunidade-nome {
-        font-size: 1.1rem;
-        color: #000000;
-        text-align: center !important;
-    }
-    .comunidade-nome1 {
-        font-size: 1.1rem;
-        color: #000000;
-        text-align: center !important;
-        margin-left: 3.5rem !important;
-    }
-    .comunidade-end {
-        font-size: 0.98rem;
-        text-align: center;
-    }
-    .comunidade-end1 {
-        font-size: 0.98rem;
-        margin-left: 4.5rem;
-        color: #000000;
-        font-weight: lighter;
-
-    }
-    .comunidade-hor1{
-        color: #000000;
-        font-size: 0.98rem;
-        margin-left: 10rem !important;
-        margin-top: 1rem;
-        color: #000;
-        font-weight: lighter;
-    }
-     .comunidade-hor {
-        color: #000000;
-        font-size: 0.98rem;
-        text-align: center;
-        margin-top: 1rem;
-        color: #000;
-        font-weight: lighter;
-    }
-}
-
-/* Responsividade para celulares */
-@media (max-width: 600px) {
-    .comunidade-nome {
-        font-size: 1.1rem;
-        color: #000000;
-        text-align: center !important;
-    }
-    .comunidade-end {
-        font-size: 0.98rem;
-        text-align: center;
-    }
-     .comunidade-hor {
-        color: #000000;
-        font-size: 0.98rem;
-        text-align: center;
-        margin-top: 1rem;
-        color: #000;
-        font-weight: lighter;
-    }
-    .img-igrejas{
-    display: inline;
-    margin-top: 1rem !important;
-    }
-    .img-igrejas1{
-    display: flex;
-    width: 20rem;
-    height: 20rem;
-    gap: 2rem;
-    margin-left: 0.2rem;
-    margin-top: 0 !important;
-    justify-content: center;
-    align-items: center;
-}
-.comunidade-end1 {
-        font-size: 0.98rem;
-        text-align: center !important;
-        margin-left: -1.2rem !important;
-        color: #000000 !important;
-        font-weight: lighter;
-
-    }
-        .comunidade-nome1 {
-        font-size: 1.1rem;
-        color: #000000;
-        text-align: center !important;
-        margin-left: 2.5rem !important;
-    }
-
-.download{
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #8b0000;
-    color: #f7e9c4;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    border-radius: 4px;
-    margin-left: 2%;
-}
-    footer {
-        width: 110%;
-        margin-left: 0rem !important;
-        position: relative !important;
-    bottom: auto !important;
-    margin-top: 220vh !important;
-    
-    }
-    body {
-        font-size: 90%;
-        text-align: center;
-
-    }
-    #topo {
-        flex-direction: column;
-        min-height: 5rem;
-        padding: 0.5rem 0;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .logo {
-        width: 3.5rem;
-        height: 4.5rem;
-        margin-left: 0;
-        margin-top: 0.5vw;
-        display: block;
-        margin-right: auto;
-        margin-bottom: 1rem;
-    }
-    .menuimg {
-        width: 2.2rem;
-        height: 2.2rem;
-        margin: 0 auto;
-        display: block;
-        position: relative;
-        z-index: 999;
-    }
-    #menu ul li {
-        font-size: 1.1rem;
-        padding: 8px;
-        text-align: center;
-    }
-    /* Tablets */
-
-   
-
-
-    #itens {
-        position: absolute;
-        top: 7rem;          /* abaixo do topo menor */
-        left: 0;
-        width: 110%;
-        margin-left: 0;
-        background-color: #8b0000;
-        text-align: center;
-        z-index: 998;
-        padding: 1rem 0;
-    }
-
-
-
-
-    .igreja, .igreja2, .igreja3 {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    .igreja {
-        width: 95%;
-        margin-top: 2%;
-    }
-    .igreja2 {
-        width: 60%;
-        margin-top: 2%;
-    }
-    .titulo, .agenda, .subt, .subtC, .subtsobre, .subtEnd, .subtcomunidades, .subtAv {
-        margin-top: 2.2rem !important;
-        margin-bottom: 1.2rem !important;
-    }
-    .titulo {
-        font-size: 1.5rem;
-        margin-top: 6%;
-        text-align: center;
-        margin-left: 0;
-    }
-    .agenda, .subt, .subtC, .dias, .diasC, .horario, .subtsobre, .txtsobre, .subtEnd, .subtcomunidades, .subtAv {
-        font-size: 1.1rem;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 2%;
-        text-align: center;
-    }
-    .subtC, .diasC {
-        margin-left: 0;
-    }
-    .txtsobre {
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .igreja3 {
-        width: 80%;
-        margin-top: 2%;
-    }
-    .Comunidades ul {
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1rem;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-    .Comunidades ul li {
-        margin-left: 0;
-        font-size: 1.1rem;
-        text-align: center;
-    }
-    .enddiv {
-        flex-direction: column;
-        gap: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: 98%;
-        height: auto;
-        align-items: center;
-    }
-    .end {
-        width: 100%;
-        font-size: 90%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .local {
-        margin-left: auto;
-        margin-right: auto;
-        width: 96%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-}
-footer {
-    position: relative;
-    background-color: #8b0000;
-    color: #f7e9c4;
-    text-align: center;
-    padding: 1rem 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
-    margin-top: 18rem;
-}
-.img-igrejas{
-    display: inline;
-    width: 20rem;
-    height: 20rem;
-    gap: 2rem;
-    margin-top: -2rem;
-    justify-content: center;
-    align-items: center;
-}
-.img-igrejas1{
-    display: flex;
-    width: 20rem;
-    height: 20rem;
-    gap: 2rem;
-    margin-top: -10.5rem;
-    justify-content: center;
-    align-items: center;
-}
-.img-igrejas:hover{
-    display: flex;
-    width: 120%;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-}
-.img-igrejas1:hover{
-    display: flex;
-    width: 120%;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-    
-}
-.comunidade-end1 {
-        font-size: 0.98rem;
-        text-align: center !important;
-        color: #000000 !important;
-        font-weight: lighter;
-
-    }
