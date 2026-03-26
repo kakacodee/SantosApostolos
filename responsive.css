@@ -1,6 +1,7 @@
 @media (max-width: 600px) {
     nav{
-        width: 100%;
+        margin: 0;
+        width: 100.3%;
     }
     /* --- Navbar --- */
     .ul-menu {
@@ -206,7 +207,7 @@
     }
 
     .ti-santa {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     .imgs {
@@ -259,8 +260,7 @@
         align-items: center;
         text-align: center;
         justify-content: center;
-        margin-right: 8vw;
-        width: 100%;
+        width: 95%;
     }
 
     footer img {
