@@ -1,240 +1,7 @@
-@media (max-width: 1024px) {
-    .nav-bar {
-        padding: 1vh 2vw;
-        width: 96%;
-    }
-    /* --- Navbar --- */
-    .ul-menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1vw;
-       margin-right: 0vw;
-        min-height: auto;
-    }
-
-    .ul-menu li a {
-        font-size: 1.4vw;
-    }
-
-    .menu-logo {
-        width: 5rem;
-    }
-
-    /* --- Hero --- */
-    .inicio {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4vw;
-        padding: 6vh 4vw;
-        height: auto;
-    }
-
-    .par-title {
-        font-size: 4vw;
-        width: 100%;
-        text-align: center;
-        margin-right: 0vw;
-        margin-top: 2vw;
-    }
-
-    .par-img {
-        width: 50%;
-        margin-right: 2vw;
-        margin-top: 0;
-    }
-
-    /* --- Sobre --- */
-    .sobre {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4vw;
-        padding: 5vh 5vw;
-        height: auto;
-    }
-
-    .img-sobre {
-        width: 40%;
-        height: auto;
-    }
-
-    .sobre-content {
-        width: 55%;
-        text-align: center;
-    }
-
-    .ti-sobre {
-        font-size: 3vw;
-        text-align: left;
-        margin-top: 1vh;
-    }
-
-    .txt-sobre {
-        font-size: 1.6vw;
-        width: 70%;
-    }
-
-    /* --- Endereço --- */
-    .endereco {
-        padding: 4vh 5vw;
-        margin-top: 0;
-        margin-right: 8vw;
-        text-align: center;
-    }
-
-    .end {
-        font-size: 4vw;
-    }
-
-    .endereco h2 {
-        font-size: 2vw;
-    }
-
-    .endereco iframe {
-        width: 80%;
-        height: 300px;
-    }
-
-    /* --- Paróquia --- */
-    .paroquia {
-        margin-top: 6vh;
-        text-align: center;
-        margin-right: 4vw;
-    }
-
-    .ti-paroquia {
-        font-size: 4vw;
-    }
-
-    .atv-paroquia {
-        width: 80%;
-    }
-
-    /* --- Cards horários --- */
-    .cards-horarios {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0vw;
-        padding: 3vh 3vw;
-        margin-top: 8vh;
-    }
-
-    .card-horario {
-        width: 15%;
-        margin: 2vh auto;
-    }
-
-    .card-title {
-        font-size: 3vw;
-    }
-
-    .card-content {
-        font-size: 2vw;
-    }
-
-    /* --- Avisos --- */
-    .avisos {
-        margin-top: 6vh;
-        text-align: center;
-        margin-right: 2vw;
-    }
-
-    .av {
-        font-size: 4vw;
-    }
-
-    /* Cards de avisos em duas colunas */
-    .comunicados,
-    .acao,
-    .pascoa,
-    .pix
-     {
-        position: static;
-        width: 45%;
-        margin: 2vh auto;
-        padding: 3vh 3vw;
-    }
-.imagem-promocional{
-        position: static;
-        width: 100%;
-        margin: 2vh auto 0 30vw;
-        padding: 3vh 5vw;
-}
-    .ti-comunicados {
-        font-size: 3vw;
-    }
-
-    .txt-comunicados {
-        font-size: 2vw;
-    }
-
-    .num-comunicados {
-        font-size: 2vw;
-    }
-
-    /* --- Semana Santa --- */
-    .semanasanta {
-        margin-top: 4vh;
-        text-align: center;
-    }
-
-    .ti-santa {
-        font-size: 4vw;
-    }
-
-    .imgs {
-        width: 80%;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 3vw;
-    }
-
-    /* --- Aniversariantes --- */
-    .aniversariantes {
-        margin-top: 6vh;
-        text-align: center;
-    }
-
-    .img-paroquia {
-        width: 80%;
-    }
-
-    /* --- Comunidades --- */
-    .comunidades {
-        margin-top: 4vh;
-        text-align: center;
-    }
-
-    .ti-comunidades {
-        font-size: 4vw;
-        margin: 2vh 0;
-    }
-
-    .comunidadesimgs {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 3vw;
-        width: 100%;
-    }
-
-    .img-comunidades {
-        width: 40%; /* duas colunas equilibradas */
-        border-radius: 20px;
-    }
-
-    /* --- Footer --- */
-    footer {
-        margin-top: 6vh;
-        padding: 2vh 1rem;
-        text-align: center;
-    }
-
-    footer img {
-        width: 2rem;
-    }
-}
-
 @media (max-width: 600px) {
-
+    nav{
+        width: 100%;
+    }
     /* --- Navbar --- */
     .ul-menu {
         flex-direction: column;
@@ -291,6 +58,7 @@
         flex-direction: column;
         align-items: center;
         padding: 4vh 6vw;
+        margin-top: 3vh;
         gap: 3vh;
         height: auto;
     }
@@ -303,24 +71,30 @@
     .sobre-content {
         width: 100%;
         text-align: center;
+        justify-content: center;
+        margin-top: -65vh;
     }
 
     .ti-sobre {
+        display: flex;
+        justify-content: center;
         font-size: 6.5vw;
-
+        
         text-align: center;
     }
 
     .txt-sobre {
-        font-size: 4vw;
+        font-size: 3vw;
         line-height: 1.4;
-        margin-left: 12vw;
+        margin-left: 1vw;
+        margin-top: 58vh;
     }
 
     /* --- Endereço --- */
     .endereco {
         padding: 3vh 6vw;
         margin-top: 0;
+        margin-left: 1.6vw !important; 
     }
 
     .end {
@@ -340,6 +114,7 @@
     .paroquia {
         margin-top: 4vh;
         text-align: center;
+        margin-left: 3vw;
     }
 
     .ti-paroquia {
@@ -357,6 +132,7 @@
         gap: 2.5vh;
         padding: 3vh 6vw;
         margin-top: 4vh;
+        margin-left: 4vw;
     }
 
     .card-horario {
@@ -376,6 +152,7 @@
     .avisos {
         margin-top: 4vh;
         text-align: center;
+        margin-right: 2vw;
     }
 
     .av {
@@ -389,11 +166,13 @@
     .pix,
     .imagem-promocional {
         position: static;
-        width: 90%;
+        width: 65%;
         margin: 0 auto 2vh auto;
         padding: 3vh 5vw;
     }
-
+.imagem-promocional{
+    width: 60% !important;
+}
     .comunicados-header {
         gap: 3vw;
     }
@@ -458,14 +237,18 @@
     }
 
     .comunidadesimgs {
-        flex-direction: column;
-        align-items: center;
-        gap: 3vh;
-        width: 100%;
+         display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+    grid-template-rows: repeat(2, auto);   /* 2 linhas automáticas */
+    align-items: center;
+    justify-items: center; /* centraliza dentro das células */
+    gap: 3vh;
+    width: 80%;
+    height: auto;
     }
 
     .img-comunidades {
-        width: 80%;
+        width: 90%;
         border-radius: 20px;
     }
 
@@ -473,10 +256,15 @@
     footer {
         margin-top: 4vh;
         padding: 2vh 1rem;
+        align-items: center;
         text-align: center;
+        justify-content: center;
+        margin-right: 8vw;
+        width: 100%;
     }
 
     footer img {
         width: 2rem;
+        gap: 10vw;
     }
 }
