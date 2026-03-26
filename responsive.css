@@ -1,3 +1,17 @@
+@media (max-width: 500px){
+    .sobre-content {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: -50vh !important;
+    }
+    .txt-sobre {
+        font-size: 3vw;
+        line-height: 1.4;
+        margin-left: 1vw;
+        margin-top: 45vh !important;
+    }
+}
 @media (max-width: 600px) {
     nav{
         margin: 0;
