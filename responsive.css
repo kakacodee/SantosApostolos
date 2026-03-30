@@ -1,3 +1,121 @@
+@media (max-width: 1672px) {
+	.cards-horarios {
+		gap: 2vw;
+		margin-top: 10vh;
+		flex-wrap: wrap;
+	}
+	.card-horario {
+		min-width: 260px;
+		max-width: 320px;
+		padding: 2vh 2vw;
+		min-height: 220px;
+	}
+	.card-title {
+		font-size: 2vw;
+	}
+	.card-content {
+		font-size: 1vw;
+	}
+	.ul-menu {
+		gap: 2vw;
+		min-height: 70px;
+	}
+	.ul-menu li a {
+		font-size: 1.1vw;
+	}
+	.inicio {
+		gap: 5vw;
+	}
+	.par-img {
+		width: 45%;
+		margin-top: -8vh;
+	}
+	.par-title {
+		font-size: 2vw;
+		margin-left: 5vw;
+		margin-top: -6vh;
+	}
+	.sobre {
+		gap: 2vw;
+		height: auto;
+		flex-direction: column;
+		align-items: center;
+	}
+	.img-sobre {
+		width: 60vw;
+		height: 30vh;
+		margin-bottom: 2vh;
+	}
+	.ti-sobre {
+		font-size: 2vw;
+	}
+	.sobre-content {
+		width: 90vw;
+	}
+	.txt-sobre {
+		font-size: 1.2vw;
+	}
+	.comunicados {
+		width: 40vw;
+		margin: 2vh auto;
+		padding: 2vh 1vw;
+	}
+	.ti-comunicados {
+		font-size: 1.5vw;
+	}
+	.txt-comunicados {
+		font-size: 1.1vw;
+		width: 90%;
+	}
+	.num-comunicados {
+		font-size: 1.1vw;
+	}
+	 .comunicados,
+    .acao,
+    .pascoa,
+    .pix,
+    .pix2,
+    .pix3,
+    .pix4,
+    .pix5, 
+    .imagem-promocional {
+        position: static;
+        width: 65%;
+        margin: 0 auto 2vh auto;
+        padding: 3vh 5vw;
+    }
+.imagem-promocional{
+    width: 60% !important;
+}
+
+	.img-acao, .img-pascoa, .img-pix, .img-pix2, .img-pix3, .img-pix4, .img-pix5 {
+		width: 100%;
+		height: auto;
+	}
+	.semanasanta {
+		margin-top: 10vh;
+	}
+	.imgs {
+		width: 90vw;
+		gap: 1vw;
+	}
+	.comunidadesimgs {
+		width: 90vw;
+		gap: 1vw;
+	}
+	.img-comunidades {
+		width: 20vw;
+	}
+	.aniversariantes {
+		width: 90vw;
+	}
+	.paroquia {
+		margin-top: 6vh;
+	}
+	.atv-paroquia {
+		width: 90vw;
+	}
+}
 @media (max-width: 384px){
     nav{
         margin: 0;
