@@ -191,6 +191,10 @@
     .acao,
     .pascoa,
     .pix,
+    .pix2,
+    .pix3,
+    .pix4,
+    .pix5, 
     .imagem-promocional {
         position: static;
         width: 65%;
@@ -200,6 +204,7 @@
 .imagem-promocional{
     width: 60% !important;
 }
+
     .comunicados-header {
         gap: 3vw;
     }
