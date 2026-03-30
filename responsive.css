@@ -1,4 +1,4 @@
-@media (max-width: 1672px) {
+@media (max-width: 1680px) {
 	.cards-horarios {
 		gap: 2vw;
 		margin-top: 10vh;
@@ -43,18 +43,35 @@
 	}
 	.img-sobre {
 		width: 60vw;
-		height: 30vh;
+		height: 115vh;
 		margin-bottom: 2vh;
 	}
 	.ti-sobre {
 		font-size: 2vw;
 	}
+    .cards-horarios {
+        margin-top: 8vh;
+        margin-right: 10vw;
+    }
+    .paroquia {
+        margin-top: 8vh;
+        margin-right: 10vw;
+    }
 	.sobre-content {
 		width: 90vw;
 	}
 	.txt-sobre {
 		font-size: 1.2vw;
 	}
+    .endereco {
+        padding: 2vh 5vw;
+        margin-top: 0;
+        margin-left: 1.6vw !important; 
+    }
+    .avisos {
+        margin-top: 8vh;
+        margin-right: 10vw;
+    }
 	.comunicados {
 		width: 40vw;
 		margin: 2vh auto;
@@ -81,14 +98,17 @@
     .imagem-promocional {
         position: static;
         width: 65%;
-        margin: 0 auto 2vh auto;
+        margin: 0 auto 2vh 7vw;
         padding: 3vh 5vw;
     }
 .imagem-promocional{
     width: 160% !important;
-    margin-left: 23vw !important;
+    margin-left: 17vw !important;
 }
-
+.semanasanta {
+    margin-top: 8vh;
+    margin-right: 10vw;
+}
 	.img-acao, .img-pascoa, .img-pix, .img-pix2, .img-pix3, .img-pix4, .img-pix5 {
 		width: 100%;
 		height: auto;
@@ -103,12 +123,15 @@
 	.comunidadesimgs {
 		width: 90vw;
 		gap: 1vw;
+        margin-right: 8vw;
 	}
 	.img-comunidades {
 		width: 20vw;
+        margin-right: 5vw;
 	}
 	.aniversariantes {
 		width: 90vw;
+        margin-left: 5vw;
 	}
 	.paroquia {
 		margin-top: 6vh;
@@ -117,6 +140,22 @@
 		width: 90vw;
 	}
 }
+@media (max-width:411px){
+
+    .sobre-content {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: -45vh !important;
+    }
+    .txt-sobre {
+        font-size: 3vw;
+        line-height: 1.4;
+        margin-left: 1vw;
+        margin-top: 40vh !important;
+    }
+}
+
 @media (max-width: 384px){
     nav{
         margin: 0;
@@ -321,7 +360,8 @@
         padding: 3vh 5vw;
     }
 .imagem-promocional{
-    width: 60% !important;
+    width: 70% !important;
+margin-left: 10.5vw !important;
 }
 
     .comunicados-header {
@@ -348,12 +388,14 @@
     .img-imagem {
         width: 100%;
         border-radius: 20px;
+        
     }
 
     /* --- Semana Santa --- */
     .semanasanta {
         margin-top: 3vh;
         text-align: center;
+        margin-left: 3vw;
     }
 
     .ti-santa {
@@ -370,10 +412,12 @@
     .aniversariantes {
         margin-top: 4vh;
         text-align: center;
+        margin-left: 6vw;
     }
 
     .img-paroquia {
         width: 90%;
+
     }
 
     /* --- Comunidades --- */
