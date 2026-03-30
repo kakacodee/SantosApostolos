@@ -85,7 +85,8 @@
         padding: 3vh 5vw;
     }
 .imagem-promocional{
-    width: 60% !important;
+    width: 160% !important;
+    margin-left: 23vw !important;
 }
 
 	.img-acao, .img-pascoa, .img-pix, .img-pix2, .img-pix3, .img-pix4, .img-pix5 {
