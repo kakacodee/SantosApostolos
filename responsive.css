@@ -141,12 +141,15 @@
 	}
 }
 @media (max-width:411px){
-
+nav{
+        margin: 0;
+        width: 103.5% !important;
+    }
     .sobre-content {
         width: 100%;
         text-align: center;
         justify-content: center;
-        margin-top: -45vh !important;
+        margin-top: -46vh !important;
     }
     .txt-sobre {
         font-size: 3vw;
@@ -154,6 +157,14 @@
         margin-left: 1vw;
         margin-top: 40vh !important;
     }
+    footer {
+        margin-top: 4vh;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 96% !important;
+    }
+
 }
 
 @media (max-width: 384px){
