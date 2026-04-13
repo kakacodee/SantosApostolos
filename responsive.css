@@ -1,204 +1,200 @@
+/* ====================================================
+   RESPONSIVO CORRIGIDO
+   Substituir o arquivo responsivo anterior por este.
+   O CSS base (styles.css) permanece inalterado.
+   ==================================================== */
+
+/* ====== RESET GLOBAL DE BOX-MODEL ====== */
+/*
+ * CORREÇÃO RAIZ: sem isso, padding e border somam à largura
+ * causando overflow e forçando nav/footer > 100%.
+ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* ====== TABLET / DESKTOP MÉDIO (≤ 1680px) ====== */
 @media (max-width: 1680px) {
-	.cards-horarios {
-		gap: 2vw;
-		margin-top: 10vh;
-		flex-wrap: wrap;
-	}
-	.card-horario {
-		min-width: 260px;
-		max-width: 320px;
-		padding: 2vh 2vw;
-		min-height: 220px;
-	}
-	.card-title {
-		font-size: 2vw;
-	}
-	.card-content {
-		font-size: 1vw;
-	}
-	.ul-menu {
-		gap: 2vw;
-		min-height: 70px;
-	}
-	.ul-menu li a {
-		font-size: 1.1vw;
-	}
-	.inicio {
-		gap: 5vw;
-	}
-	.par-img {
-		width: 45%;
-		margin-top: -8vh;
-	}
-	.par-title {
-		font-size: 2vw;
-		margin-left: 5vw;
-		margin-top: -6vh;
-	}
-	.sobre {
-		gap: 2vw;
-		height: auto;
-		flex-direction: column;
-		align-items: center;
-	}
-	.img-sobre {
-		width: 60vw;
-		height: 115vh;
-		margin-bottom: 2vh;
-	}
-	.ti-sobre {
-		font-size: 2vw;
-	}
-    .cards-horarios {
-        margin-top: 8vh;
-        margin-right: 10vw;
+
+    /* --- Navegação --- */
+    .ul-menu {
+        gap: 2vw;
+        min-height: 70px;
     }
-    .paroquia {
-        margin-top: 8vh;
-        margin-right: 10vw;
+    .ul-menu li a {
+        font-size: 1.1vw;
     }
-	.sobre-content {
-		width: 90vw;
-	}
-	.txt-sobre {
-		font-size: 1.2vw;
-	}
+
+    /* --- Início --- */
+    .inicio {
+        gap: 5vw;
+    }
+    .par-img {
+        width: 45%;
+        margin-top: -8vh;
+    }
+    .par-title {
+        font-size: 2vw;
+        margin-left: 5vw;
+        margin-top: -6vh;
+    }
+
+    /* --- Sobre --- */
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+        height: auto;
+    }
+    .img-sobre {
+        width: 60vw;
+        height: auto;
+        margin-bottom: 2vh;
+    }
+    .ti-sobre {
+        font-size: 2vw;
+    }
+    .sobre-content {
+        width: 90vw;
+    }
+    .txt-sobre {
+        font-size: 1.2vw;
+    }
+
+    /* --- Endereço --- */
     .endereco {
         padding: 2vh 5vw;
         margin-top: 0;
-        margin-left: 1.6vw !important; 
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    /* --- Avisos --- */
     .avisos {
         margin-top: 8vh;
-        margin-right: 10vw;
+        text-align: center;
     }
-	.comunicados {
-		width: 40vw;
-		margin: 2vh auto;
-		padding: 2vh 1vw;
-	}
-	.ti-comunicados {
-		font-size: 1.5vw;
-	}
-	.txt-comunicados {
-		font-size: 1.1vw;
-		width: 90%;
-	}
-	.num-comunicados {
-		font-size: 1.1vw;
-	}
-	 .comunicados,
+
+    /*
+     * CORREÇÃO PRINCIPAL:
+     * Todos os cards de aviso saem do posicionamento por margem
+     * e passam a fluir normalmente no documento, centralizados.
+     */
+    .comunicados,
     .acao,
     .pascoa,
     .pix,
     .pix2,
     .pix3,
     .pix4,
-    .pix5, 
+    .pix5,
     .imagem-promocional {
         position: static;
-        width: 65%;
-        margin: 0 auto 2vh 7vw;
-        padding: 3vh 5vw;
-    }
-.imagem-promocional{
-    width: 160% !important;
-    margin-left: 17vw !important;
-}
-.semanasanta {
-    margin-top: 8vh;
-    margin-right: 10vw;
-}
-	.img-acao, .img-pascoa, .img-pix, .img-pix2, .img-pix3, .img-pix4, .img-pix5 {
-		width: 100%;
-		height: auto;
-	}
-	.semanasanta {
-		margin-top: 10vh;
-	}
-	.imgs {
-		width: 90vw;
-		gap: 1vw;
-	}
-	.comunidadesimgs {
-		width: 90vw;
-		gap: 1vw;
-        margin-right: 8vw;
-	}
-	.img-comunidades {
-		width: 20vw;
-        margin-right: 5vw;
-	}
-	.aniversariantes {
-		width: 90vw;
-        margin-left: 5vw;
-	}
-	.paroquia {
-		margin-top: 6vh;
-	}
-	.atv-paroquia {
-		width: 90vw;
-	}
-}
-@media (max-width:411px){
-nav{
-        margin: 0;
-        width: 103.5% !important;
-    }
-    .sobre-content {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        margin-top: -46vh !important;
-    }
-    .txt-sobre {
-        font-size: 3vw;
-        line-height: 1.4;
-        margin-left: 1vw;
-        margin-top: 40vh !important;
-    }
-    footer {
-        margin-top: 4vh;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        width: 96% !important;
+        width: 40vw;
+        max-width: 560px;
+        margin: 0 auto 2vh auto;
+        padding: 3vh 3vw;
     }
 
-}
+    .imagem-promocional {
+        width: 50vw !important;
+        max-width: 640px;
+    }
 
-@media (max-width: 384px){
-    nav{
-        margin: 0;
-        width: 103.5% !important;
+    .ti-comunicados {
+        font-size: 1.5vw;
     }
-    .sobre-content {
+    .txt-comunicados {
+        font-size: 1.1vw;
+        width: 90%;
+    }
+    .num-comunicados {
+        font-size: 1.1vw;
+    }
+
+    .img-acao,
+    .img-pascoa,
+    .img-pix,
+    .img-pix2,
+    .img-pix3,
+    .img-pix4,
+    .img-pix5 {
         width: 100%;
-        text-align: center;
-        justify-content: center;
-        margin-top: -45vh !important;
+        height: auto;
     }
-    .txt-sobre {
-        font-size: 3vw;
-        line-height: 1.4;
-        margin-left: 1vw;
-        margin-top: 40vh !important;
-    }
+
+    /* --- Cards de horários --- */
     .cards-horarios {
-        flex-direction: column;
-        align-items: center;
-        gap: 2.5vh;
-        padding: 3vh 6vw;
-        margin-top: 4vh;
-        margin-left: 1vw !important;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vw;
+        margin-top: 8vh;
+        justify-content: center;
+    }
+    .card-horario {
+        min-width: 260px;
+        max-width: 320px;
+        padding: 2vh 2vw;
+        min-height: 220px;
+    }
+    .card-title {
+        font-size: 2vw;
+    }
+    .card-content {
+        font-size: 1vw;
+    }
+
+    /* --- Avisos de fiéis --- */
+    .cards-avisos-fieis {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2vw;
+        margin: 4vh auto;
+        width: 90vw;
+    }
+    .card-aviso-fiel {
+        width: 320px;
+    }
+
+    /* --- Imagens / Comunidades --- */
+    .imgs {
+        width: 90vw;
+        gap: 1vw;
+    }
+    .comunidadesimgs {
+        width: 90vw;
+        gap: 1vw;
+        margin: 0 auto;
+    }
+    .img-comunidades {
+        width: 20vw;
+    }
+    .aniversariantes {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .atv-paroquia {
+        width: 90vw;
     }
 }
-@media (max-width: 600px) {
-    nav{
+
+
+/* ====== TABLET PEQUENO / PAISAGEM MOBILE (≤ 768px) ====== */
+@media (max-width: 768px) {
+
+    /* --- Navegação --- */
+    nav {
+        width: 100%;
         margin: 0;
-        width: 100.3%;
     }
-    /* --- Navbar --- */
     .ul-menu {
         flex-direction: column;
         align-items: center;
@@ -206,29 +202,18 @@ nav{
         padding: 10px 0;
         min-height: auto;
     }
-
-    .logo-item {
-        order: -1; /* logo primeiro */
-        padding: 6px 0;
-    }
-
-    .menu-logo {
-        width: 4rem;
-    }
-
     .ul-menu li {
         width: 100%;
         justify-content: center;
     }
-
     .ul-menu li a {
-        font-size: 4vw;
+        font-size: 3.5vw;
         display: block;
         text-align: center;
         padding: 5px 0;
     }
 
-    /* --- Hero --- */
+    /* --- Início --- */
     .inicio {
         flex-direction: column;
         align-items: center;
@@ -236,16 +221,14 @@ nav{
         gap: 3vh;
         height: auto;
     }
-
     .par-title {
-        font-size: 7vw;
+        font-size: 5vw;
         width: 100%;
         text-align: center;
         margin: 0;
     }
-
     .par-img {
-        width: 85%;
+        width: 70%;
         margin: 0 auto;
     }
 
@@ -258,104 +241,57 @@ nav{
         gap: 3vh;
         height: auto;
     }
-
     .img-sobre {
-        width: 80%;
+        width: 70%;
         height: auto;
+        margin-left: 0;
     }
-
     .sobre-content {
         width: 100%;
         text-align: center;
         justify-content: center;
-        margin-top: -65vh;
-    }
-
-    .ti-sobre {
-        display: flex;
-        justify-content: center;
-        font-size: 6.5vw;
-        
-        text-align: center;
-    }
-
-    .txt-sobre {
-        font-size: 3vw;
-        line-height: 1.4;
-        margin-left: 1vw;
-        margin-top: 58vh;
-    }
-
-    /* --- Endereço --- */
-    .endereco {
-        padding: 3vh 6vw;
         margin-top: 0;
-        margin-left: 1.6vw !important; 
     }
-
-    .end {
-        font-size: 6.5vw;
-    }
-
-    .endereco h2 {
-        font-size: 4vw;
-    }
-
-    .endereco iframe {
-        width: 100%;
-        height: 220px;
-    }
-
-    /* --- Paróquia --- */
-    .paroquia {
-        margin-top: 4vh;
+    .ti-sobre {
+        font-size: 4.5vw;
         text-align: center;
-        margin-left: 3vw;
+    }
+    .txt-sobre {
+        font-size: 2vw;
+        line-height: 1.5;
+        margin: 0 auto;
     }
 
-    .ti-paroquia {
-        font-size: 6.5vw;
-    }
-
-    .atv-paroquia {
-        width: 90%;
-    }
-
-    /* --- Cards horários --- */
+    /* --- Cards de horários --- */
     .cards-horarios {
         flex-direction: column;
         align-items: center;
         gap: 2.5vh;
         padding: 3vh 6vw;
         margin-top: 4vh;
-        margin-left: 4vw;
+        margin-left: 0;
+        width: 100%;
     }
-
     .card-horario {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
     }
-
     .card-title {
-        font-size: 6vw;
+        font-size: 4.5vw;
     }
-
     .card-content {
-        font-size: 4vw;
+        font-size: 2.5vw;
     }
 
     /* --- Avisos --- */
     .avisos {
         margin-top: 4vh;
         text-align: center;
-        margin-right: 2vw;
     }
-
     .av {
-        font-size: 6.5vw;
+        font-size: 5vw;
+        margin-left: 0;
     }
-
-    /* Cards de avisos empilhados */
     .comunicados,
     .acao,
     .pascoa,
@@ -363,113 +299,395 @@ nav{
     .pix2,
     .pix3,
     .pix4,
-    .pix5, 
+    .pix5,
     .imagem-promocional {
         position: static;
-        width: 65%;
+        width: 80%;
+        max-width: 560px;
         margin: 0 auto 2vh auto;
         padding: 3vh 5vw;
     }
-.imagem-promocional{
-    width: 70% !important;
-margin-left: 10.5vw !important;
-}
-
-    .comunicados-header {
-        gap: 3vw;
+    .imagem-promocional {
+        width: 80% !important;
+        max-width: 560px;
     }
-
-    .img-comunicados {
-        width: 15%;
-    }
-
     .ti-comunicados {
-        font-size: 5vw;
+        font-size: 3vw;
     }
-
     .txt-comunicados {
-        font-size: 4vw;
-        text-align: left;
+        font-size: 2.5vw;
+        width: 90%;
     }
-
     .num-comunicados {
-        font-size: 4vw;
+        font-size: 2.5vw;
     }
 
-    .img-imagem {
-        width: 100%;
-        border-radius: 20px;
-        
+    /* --- Cards de avisos de fiéis --- */
+    .cards-avisos-fieis {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        margin: 3vh auto;
+        width: 90%;
+    }
+    .card-aviso-fiel {
+        width: 90%;
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-aviso-fiel.destaque {
+        width: 90%;
+        min-width: unset;
+        max-width: 100%;
+        font-size: 1.1rem;
     }
 
-    /* --- Semana Santa --- */
-    .semanasanta {
+    /* --- Endereço --- */
+    .endereco {
         margin-top: 3vh;
+        margin-left: 0;
+        padding: 2vh 6vw;
         text-align: center;
-        margin-left: 3vw;
     }
-
-    .ti-santa {
+    .end {
         font-size: 5vw;
     }
 
+    /* --- Paróquia --- */
+    .ti-paroquia,
+    .sub-paroquia,
+    .atv-paroquia {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* --- Imagens --- */
     .imgs {
         width: 90%;
         flex-direction: column;
         gap: 2vh;
     }
-
-    /* --- Aniversariantes --- */
-    .aniversariantes {
-        margin-top: 4vh;
-        text-align: center;
-        margin-left: 6vw;
-    }
-
-    .img-paroquia {
-        width: 90%;
-
-    }
-
-    /* --- Comunidades --- */
-    .comunidades {
-        margin-top: 3vh;
-        text-align: center;
-    }
-
-    .ti-comunidades {
-        font-size: 6.5vw;
-        margin: 2vh 0;
-    }
-
     .comunidadesimgs {
-         display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
-    grid-template-rows: repeat(2, auto);   /* 2 linhas automáticas */
-    align-items: center;
-    justify-items: center; /* centraliza dentro das células */
-    gap: 3vh;
-    width: 80%;
-    height: auto;
-    }
-
-    .img-comunidades {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vh;
         width: 90%;
+        margin: 0 auto;
+    }
+    .img-comunidades {
+        width: 100%;
         border-radius: 20px;
     }
 
     /* --- Footer --- */
     footer {
+        width: 100%;
         margin-top: 4vh;
         padding: 2vh 1rem;
-        align-items: center;
         text-align: center;
-        justify-content: center;
+    }
+}
+
+
+/* ====== MOBILE (≤ 600px) ====== */
+@media (max-width: 600px) {
+
+    /* --- Navegação e Footer: NUNCA > 100% --- */
+    nav,
+    footer {
+        width: 100%;
+        margin: 0;
+        left: 0;
+    }
+
+    .cards-horarios {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5vh;
+        padding: 3vh 4vw;
+        margin-top: 4vh;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .ul-menu li a {
+        font-size: 4vw;
+    }
+
+    /* --- Início --- */
+    .par-title {
+        font-size: 7vw;
+        margin-left: 0;
+        text-align: center;
+        width: 90%;
+    }
+    .par-img {
+        width: 85%;
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    /* --- Sobre --- */
+    .ti-sobre,
+    .txt-sobre {
+        margin-left: 0;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .ti-sobre {
+        font-size: 6.5vw;
+        margin-bottom: 1vh;
+    }
+    .txt-sobre {
+        font-size: 3.5vw;
+    }
+    .img-sobre {
+        margin-left: 0;
+        width: 85%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* --- Endereço --- */
+    .endereco {
+        padding: 2vh 4vw;
+        margin-top: 3vh;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    .end {
+        font-size: 6vw;
+    }
+
+    /* --- Avisos --- */
+    .av {
+        font-size: 6.5vw;
+        margin-left: 0;
+        text-align: center;
+    }
+    .comunicados,
+    .acao,
+    .pascoa,
+    .pix,
+    .pix2,
+    .pix3,
+    .pix4,
+    .pix5,
+    .imagem-promocional {
+        width: 90%;
+        margin: 0 auto 2vh auto;
+        padding: 3vh 4vw;
+    }
+    .imagem-promocional {
+        width: 90% !important;
+    }
+    .ti-comunicados {
+        font-size: 4.5vw;
+    }
+    .txt-comunicados {
+        font-size: 4vw;
+    }
+    .num-comunicados {
+        font-size: 4vw;
+    }
+
+    /* --- Paróquia --- */
+    .ti-paroquia,
+    .sub-paroquia,
+    .atv-paroquia {
+        margin-left: 0;
+        text-align: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* --- Cards de avisos de fiéis --- */
+    .card-aviso-fiel {
+        width: 95%;
+        font-size: 1rem;
+    }
+    .card-aviso-fiel.destaque {
+        font-size: 1.2rem;
+    }
+    .cards-avisos-fieis {
+        width: 95%;
+        margin: 0 auto 2vh auto;
+    }
+
+    .img-paroquia {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    footer {
+        margin-top: 4vh;
+    }
+}
+
+/* ====== MOBILE MÉDIO (≤ 480px) ====== */
+@media (max-width: 480px) {
+
+    nav,
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* --- Início --- */
+    .par-title {
+        font-size: 7.5vw;
+    }
+    .par-img {
+        width: 88%;
+    }
+
+    /* --- Sobre --- */
+    .ti-sobre {
+        font-size: 7vw;
+    }
+    .txt-sobre {
+        font-size: 3.8vw;
         width: 95%;
     }
 
-    footer img {
-        width: 2rem;
-        gap: 10vw;
+    /* --- Cards horários --- */
+    .card-horario {
+        width: 92%;
+    }
+    .card-title {
+        font-size: 6vw;
+    }
+    .card-content {
+        font-size: 4vw;
+    }
+
+    /* --- Avisos --- */
+    .av {
+        font-size: 7vw;
+    }
+    .comunicados,
+    .acao,
+    .pascoa,
+    .pix,
+    .pix2,
+    .pix3,
+    .pix4,
+    .pix5,
+    .imagem-promocional {
+        width: 92%;
+        padding: 3vh 4vw;
+    }
+    .imagem-promocional {
+        width: 92% !important;
+    }
+    .ti-comunicados {
+        font-size: 5vw;
+    }
+    .txt-comunicados {
+        font-size: 4.2vw;
+    }
+    .num-comunicados {
+        font-size: 4.2vw;
+    }
+
+    /* --- Cards avisos de fiéis --- */
+    .card-aviso-fiel {
+        width: 92%;
+        font-size: 0.95rem;
+    }
+    .card-aviso-fiel.destaque {
+        width: 92%;
+        font-size: 1.1rem;
+    }
+
+    .img-paroquia {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ====== MOBILE PEQUENO (≤ 384px) ====== */
+@media (max-width: 384px) {
+
+    nav,
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+
+    .comunicados,
+    .acao,
+    .pascoa,
+    .pix,
+    .pix2,
+    .pix3,
+    .pix4,
+    .pix5,
+    .imagem-promocional {
+        width: 92%;
+        padding: 3vh 4vw;
+        margin: 0 auto 2vh auto;
+    }
+
+    .par-title {
+        font-size: 8vw;
+    }
+
+    .txt-sobre {
+        font-size: 4vw;
+        line-height: 1.4;
+        margin: 2vh auto;
+    }
+    .sobre-content {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .cards-horarios {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5vh;
+        padding: 3vh 4vw;
+        margin-top: 4vh;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .card-aviso-fiel {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .card-aviso-fiel.destaque {
+        font-size: 1rem;
+        min-width: unset;
+        max-width: 100%;
+    }
+    .cards-avisos-fieis {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .ti-paroquia {
+        font-size: 3.5vw;
+    }
+    .img-paroquia {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    footer {
+        margin-top: 4vh;
+        text-align: center;
     }
 }

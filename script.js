@@ -7,3 +7,11 @@
         item.style.display = 'none';
     }
 }
+function copiarTexto() {
+    const texto = document.getElementById("texto").innerText;
+  navigator.clipboard.writeText(texto).then(() => {
+    alert("Texto copiado!");
+  }).catch(err => {
+    alert("Erro ao copiar: " + err);
+  });
+}
