@@ -5,7 +5,7 @@
     gap: 1%;
     justify-content: center;
     margin-left: 39vw;
-    margin-top: -100vh;
+   margin-top: -34vw;
 }
 .card-aviso-fiel {
     background: #f8f6f4;
@@ -21,7 +21,7 @@
     justify-content: space-between;
     font-family: 'Georgia', serif;
     font-size: 1.18rem;
-    margin-bottom: 18px;
+    margin-bottom: 2vh;
     transition: box-shadow 0.2s;
 }
 .card-aviso-fiel:hover {
@@ -320,7 +320,7 @@ margin-top: -1vh;
     display: flex;
     justify-content:flex-start;
     margin-left: 40.5vw;
-    margin-top: -103.2vh;
+    margin-top: -118vh;
     width: 15%;
    
     padding: 4vh;
@@ -369,7 +369,7 @@ margin-top: -1vh;
     display: flex;
     justify-content:flex-start;
     margin-left: 66vw;
-    margin-top: -42vh;
+    margin-top: -32.5vh;
     width: 18%;
    
     padding: 4vh;
@@ -401,8 +401,8 @@ margin-top: -1vh;
 .pix4{
     display: flex;
     justify-content:flex-start;
-    margin-left: 12.5vw;
-    margin-top: 27vh;
+    margin-left: 64.5vw;
+    margin-top: 2vh;
     width: 18%;
    
     border-radius: 20px;
@@ -411,8 +411,8 @@ margin-top: -1vh;
 .pix5{
     display: flex;
     justify-content:flex-start;
-    margin-left: 12.5vw;
-    margin-top:3vh;
+    margin-left: 64.5vw;
+    margin-top:1vh;
     width: 18%;
    
     border-radius: 20px;
@@ -468,7 +468,7 @@ margin-top: -1vh;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 2vh;
+    margin-top: 40vh;
 }
 .ti-comunidades{
     font-weight: bold;
