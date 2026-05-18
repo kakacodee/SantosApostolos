@@ -519,3 +519,104 @@ margin-top: -1vh;
         width: 70%;
         border-radius: 20px;
     }
+
+/* SLIDE PATROCINADORES */
+.slide-patrocinadores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    background: #fff8f6;
+    border-radius: 24px;
+    box-shadow: 0 2px 12px rgba(100,0,0,0.06);
+    padding: 5vh 2vw;
+    margin: 5vh auto 7vh auto;
+    max-width: 540px;
+    width: 92vw;
+    min-height: 170px;
+}
+
+.slide-img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 90px;
+        min-width: 120px;
+}
+
+.slide-img {
+    width: 48vw;
+    max-width: 420px;
+    min-width: 140px;
+    height: auto;
+    max-height: 150px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px #0002;
+    background: #fff;
+    object-fit: contain;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.slide-img:hover {
+        box-shadow: 0 6px 24px #64000022;
+        transform: scale(1.03);
+}
+
+.slide-btn {
+        background: #640000;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 38px;
+        height: 38px;
+        font-size: 1.7rem;
+        cursor: pointer;
+        box-shadow: 0 2px 8px #0001;
+        transition: background 0.2s, color 0.2s, transform 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1vw;
+}
+.slide-btn:hover {
+        background: #ffd700;
+        color: #640000;
+        transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+    .slide-img {
+        width: 80vw;
+        max-width: 98vw;
+        min-width: 100px;
+        max-height: 120px;
+    }
+    .slide-patrocinadores {
+        padding: 3vh 1vw;
+        gap: 1vw;
+        max-width: 98vw;
+        min-height: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .slide-img {
+        width: 95vw;
+        max-width: 99vw;
+        min-width: 70px;
+        max-height: 80px;
+    }
+    .slide-patrocinadores {
+        padding: 2vh 0.5vw;
+        gap: 0.5vw;
+        border-radius: 14px;
+        max-width: 99vw;
+        min-height: 80px;
+    }
+    .slide-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+    }
+}
